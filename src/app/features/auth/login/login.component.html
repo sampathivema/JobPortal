@@ -1,0 +1,33 @@
+<div class="block-header" style="margin-top: 200px;">
+        <h2>Login to Jobs India</h2>
+</div>
+<div class="block-content"> 
+    <form [formGroup]="mainForm" onsubmit="loginUSer()" >
+                          
+        <div >
+          <mat-form-field >
+            <input matInput placeholder="User Name" formControlName="UserName" />    
+          </mat-form-field>   
+        </div>
+        <div>
+          <mat-form-field   >
+            <input matInput placeholder="Password" formControlName="Password" type="password" />    
+          </mat-form-field>  
+        </div>
+        
+            <div class="form-actions" style="padding-left: 20px;">
+                <div class="row" style="text-align: center;">
+                  <button mat-button class="clsBtnLogin"  (click)="LoginUser()" type="submit"> Login</button>
+                        
+                            <div class="or">
+                                OR
+                            </div>
+                            
+                              <button  class="clsBtnLogin"(click)="SignUp()"      mat-button   >Sign Up</button>
+                            
+                        
+                </div>
+            </div>
+    </form>   
+
+</div>

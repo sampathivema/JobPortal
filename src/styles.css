@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.logo-card {
+      margin-top: 0px;
+      display: block;
+      max-height:10px;
+  }
+  .clsLoginUsername{
+    margin-left: 400px;    
+    max-width: 200px;
+    margin-top: 0px;
+    
+  }
+  div.findjobs-searchjobs {
+    margin-top: 24px;
+  }
+  .clsLoginPassword{
+    margin-left: 30px;
+    max-width: 200px;
+    
+  }
+  .clsBtnLogin{
+    background-color: coral;
+  }
+  
+  
+ 
+  
+
+

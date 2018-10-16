@@ -1,0 +1,99 @@
+<div class="container-fluid" style="margin-top:100px">
+  <h1 id="font-quicksand" class="text-center display-5 my-3">We're glad you're here. Let's get you started!</h1>
+  <div class="row">
+   
+    <div class="col-lg-6 p-5">
+      <form [formGroup]="rForm">
+
+        <div class="form-group">
+          <mat-form-field>
+            <input matInput placeholder=" First Name" formControlName="FirstName" />
+          </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-form-field>
+              <input matInput placeholder="Last Name" formControlName="LastName" />
+            </mat-form-field>
+          </div>
+          <div class="form-group">
+            <mat-form-field>
+              <input matInput placeholder="Email" type="email" formControlName="EmailId" />
+            </mat-form-field>
+          </div>
+          <div class="form-group">
+            <mat-form-field>
+              <input matInput placeholder="Mobile No" type="text" formControlName="MobileNo" />
+            </mat-form-field>
+          </div>
+  
+          <div class="form-group">
+            <mat-form-field>
+              <input matInput placeholder="Job Title" type="text" formControlName="JobTitle" />
+            </mat-form-field>
+          </div>
+  
+          <div class="form-group">
+            <mat-form-field>
+              <input matInput placeholder="Company Name" type="text" formControlName="CompanyName" />
+            </mat-form-field>
+          </div>
+  
+          <div class="form-group">
+            <mat-form-field>
+              <input matInput placeholder="Street" formControlName="Street" />
+            </mat-form-field>
+          </div>
+          <div class="form-group">
+              <mat-form-field>
+                <input matInput placeholder="H-No ,Flat-No" formControlName="HouseNumber" />
+              </mat-form-field>
+            </div>
+    
+            <div class="form-group">
+              <mat-form-field>
+                <input matInput placeholder="City" formControlName="City" />
+              </mat-form-field>
+            </div>
+    
+            <div class="form-group">
+              <mat-form-field>
+                <input matInput placeholder="State/Region" formControlName="StateRegion" />
+              </mat-form-field>
+            </div>
+            <div class="form-group">
+              <mat-form-field>
+                <input matInput placeholder="Country" formControlName="Country" />
+              </mat-form-field>
+            </div>
+    
+            <div class="form-group">
+              <mat-form-field>
+                <input type="number" matInput placeholder="Zip Code" formControlName="ZipCode" />
+              </mat-form-field>
+            </div>
+    
+    
+            <div class="form-group">
+              <mat-form-field>
+                <input matInput placeholder="Password" type="password" formControlName="Password" />
+              </mat-form-field>
+            </div>
+    
+            <div class="form-group">
+              <mat-form-field>
+                <input matInput placeholder="Confom Password" type="password" formControlName="ConfomPassword" />
+              </mat-form-field>
+            </div>
+
+        <div class="form-group">
+
+            <button (click)="addNewUser()"  type="button" class="btn btn-primary btn-lg btn-round-lg"
+            [ngClass]="{'has-success':rForm.valid,'has-danger':rForm.invalid && (rForm.dirty ||rForm.touched)}"  
+            [disabled]="rForm.invalid"  mat-button>
+            <i class="fa fa-check"></i> Create Account
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
